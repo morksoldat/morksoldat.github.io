@@ -153,7 +153,7 @@ $("#js--pasapalabra").click(function() {
 // Key bindings for skip the word
 $("#js--question-controls").keypress(function(event) {
 	var keycode = (event.keyCode ? event.keyCode : event.which);
-	if (keycode == "32") {
+	if (keycode == "17") {
 		pasapalabra(count);
 		continuePlaying();
 	}
