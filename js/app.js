@@ -2,14 +2,14 @@
 // -----------------------------------------------------------------------------
 
 var words = [
-	new Word(0, "A", "Empieza por A:", " Relato breve de un acontecimiento extraño, curioso o divertido, generalmente ocurrido a la persona que lo cuenta.", "Anecdota"),
-	new Word(1, "B", "Empieza por B:", " Pasta dulce y esponjosa, hecha con harina, huevos, levadura y otros ingredientes, que puede tener distintas formas", "Bollo"),
-	new Word(2, "C", "Empieza por C:", " Corriente de agua que cae desde cierta altura a causa de un brusco desnivel en su cauce, especialmente en un rio", "Cascada"),
-	new Word(3, "D", "Empieza por D:", " Arma blanca de hoja corta, ancha y puntiaguda, parecida a la espada pero de menor tamaño", "Daga"),
-	new Word(4, "E", "Empieza por E:", " Línea curva que describe varias vueltas alrededor de un punto, alejándose cada vez más de él", "Espiral"),
-	new Word(5, "F", "Contiene la F:", " Que está descompuesto o podrido por la acción de diversos factores y determinados microorganismos", "Putrefacto"),
-	new Word(6, "G", "Empieza por G:", " Que se comporta de manera ruda, tosca o grosera", "Garrulo"),
-	new Word(7, "H", "Contiene la H:", " Persona o animal que es grueso y de poca altura", "Rechoncho"),
+	new Word(0, "A", "Empieza por A:", " Nombre científico de helminto cuyas larvas alcanzan el tejido pulmonar pudiendo causar tos, crisis obstructivas y hemoptisis.", "ascaris lumbricoides"),
+	new Word(1, "B", "Empieza por B:", " Entidad clínica  caracterizada por fiebre sin foco, sed orina no inflamatorio, GB >15000 y PCR >90", "bacteremia oculta"),
+	new Word(2, "C", "Empieza por C:", " Agente infeccioso cuya infección in útero puede producir sordera en el niño", "citomegalovirus"),
+	new Word(3, "D", "Empieza por D:", " Antimicrobiano usado en el tratamiento del acné, rosácea, infecciones por Rickettsias, brucella canis y gonorrea", "doxiciclina"),
+	new Word(4, "E", "Empieza por E:", " Forma de presentación de la infección neurológica por virus herpes", "encefalitis"),
+	new Word(5, "F", "Empieza por F:", " Infección cutánea por S. pyógenes caracterizada por eritema e intenso dolor con rápida progresión asociada a shock tóxico", "fasceitis necrotizante"),
+	new Word(6, "G", "Empieza por G:", " Vector de Borrelia burgdorferi  y Erlichia canis ", "garrapata"),
+	new Word(7, "H", "Empieza por H:", " Sindrome de activación inmune caracterizado por fiebre, citopenias, esplenomegalia, hipertrigliceridemia, hipofibrinogenemia, elevación de ferritina y alta mortalidad", "hemofagocítico"),
 	new Word(8, "I", "Empieza por I:", " Que está en el espacio existente entre dos astros, o que tiene relación con él", "Interestelar"),
 	new Word(9, "J", "Empieza por J:", " Chile picante de unos 5 cm de largo, carnoso y de punta redonda, que se usa para condimentar ciertos guisos", "Jalapeño"),
 	new Word(10, "L", "Contiene la L:", " Hombre pequeño y débil", "Homunculo"),
