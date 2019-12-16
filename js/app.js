@@ -5,7 +5,7 @@ const questions = {
 	],
 	"B": [
 		["barco pequeño", "bote"],
-		["pelo de la cara", "braba"]
+		["pelo de la cara", "barba"]
 	]
 }
 const questions_array = Object.entries(questions)
@@ -51,7 +51,13 @@ const words = questions_array.map(function (v, index) {
 
 
 function createWord(num, letter, question, answer) {
-	return new Word(num, letter, `Empieza por ${letter}:`, ` ${question}`, answer)
+	var hint;
+	if (answer[0].toLowerCase() === letter.toLowerCase()) {
+		hint = `Empieza por ${letter}:`;
+	} else {
+		hint = `Contiene ${letter}:`;
+	}
+	return new Word(num, letter, hint, ` ${question}`, answer)
 }
 
 function Word(idNumber, letter, hint, definition, word, correct) {
