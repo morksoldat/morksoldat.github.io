@@ -1,10 +1,17 @@
 const questions = {
 	"A": [
-		["Nombre científico de helminto cuyas larvas alcanzan el tejido pulmonar pudiendo causar tos, crisis obstructivas y hemoptisis.", "ascaris lumbricoides"],
-		["Antiparasitario de elección para el tratamiento de la toxocariasis", "albendazol"],
-		["Aminoglicósido de uso parenteral para el tratamiento de ITU febril o intolerancia gástrica para el tratamiento vía oral", "amikacina"],
+		["Nombre científico de helminto cuyas larvas alcanzan el tejido pulmonar pudiendo causar tos, crisis obstructivas y hemoptisis.", ["ascaris lumbricoides", "ascaris"]],
+		["Antiparasitario de elección para el tratamiento de la toxocariasis", ["albendazol", "albendazol"]],
+		["Aminoglicósido de uso parenteral para el tratamiento de ITU febril o intolerancia gástrica para el tratamiento vía oral", ["amikacina", "amikacina"]],
 		["Vector de la Malaria (género)", "anopheles"],
-		["Vector de zika", "aedes aegypti"]
+		["Vector de zika", ["aedes aegypti", "aedes"]]
+
+		/* 	
+			Nota de Guillermo: 
+			En 4 de los 5 elementos del arreglo `A` cambié el elemento de índice 1 (2º elemento) por un arreglo de dos elementos. 
+			Eso significa que el contenido de words[pos].word va a ser un arreglo de largo >= 1. 
+			Utilizar este formato para incorporar todas las posibles respuestas para cada pregunta.
+		*/
 	],
 	"B": [
 		["Entidad clínica  caracterizada por fiebre sin foco, sed orina no inflamatorio, GB >15000 y PCR >90", "bacteremia oculta"],
@@ -207,12 +214,24 @@ function showDefinition(pos) {
 var remainingWords = words.length;
 
 function checkAnswer(pos) {
+	/*
+		Nota de Guillermo:
+		Creamos una variable answerTest que asume que la respuesta es correcta.
+		Iteramos todos los elementos del arreglo revisando si son iguales a userAnswer. 
+		Cuando son iguales salimos del loop y cambiamos answerTest a True.
+		Luego evaluamos el antiguo else que se ejecutaba cuando la respuesta era incorrecta: if(!answerTest)...
+	*/
 	var userAnswer = $("#js--user-answer").val().toLowerCase();
-	if (userAnswer == words[pos].word.toLowerCase()) {
-		words[pos].correct = true;
-		$(".circle .item").eq(words[pos].idNumber).addClass("item--success");
-
-	} else {
+	let answerTest = false;
+	for(let i = 0; i < words[pos].word.length; i++){
+		if (userAnswer == words[pos].word[i].toLowerCase()) {
+			words[pos].correct = true;
+			$(".circle .item").eq(words[pos].idNumber).addClass("item--success");	
+			answerTest = true;
+			break;
+		}
+	}
+	if(!answerTest) {
 		words[pos].correct = false;
 		$(".circle .item").eq(words[pos].idNumber).addClass("item--failure");
 	}
