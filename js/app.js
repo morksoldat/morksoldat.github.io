@@ -6,19 +6,19 @@ const questions = {
 		["Vector de la Malaria (género)", "anopheles"],
 		["Vector de zika", ["aedes aegypti", "aedes"]]
 
-		/* 	
-			Nota de Guillermo: 
-			En 4 de los 5 elementos del arreglo `A` cambié el elemento de índice 1 (2º elemento) por un arreglo de dos elementos. 
-			Eso significa que el contenido de words[pos].word va a ser un arreglo de largo >= 1. 
+		/*
+			Nota de Guillermo:
+			En 4 de los 5 elementos del arreglo `A` cambié el elemento de índice 1 (2º elemento) por un arreglo de dos elementos.
+			Eso significa que el contenido de words[pos].word va a ser un arreglo de largo >= 1.
 			Utilizar este formato para incorporar todas las posibles respuestas para cada pregunta.
 		*/
 	],
 	"B": [
-		["Entidad clínica  caracterizada por fiebre sin foco, sed orina no inflamatorio, GB >15000 y PCR >90", "bacteremia oculta"],
-		["Agente etiológico de la tos convulsiva", "bordetella pertussis"],
-		["Zoonosis adquirida por contacto con perros con infección del tracto genital. En el humano puede producir infección osteoarticular.", "brucella canis"],
-		["Agente etiológico de la enfermedad de arañazo de gato", "bartonella henselae"],
-		["Agente etiológico de la Fiebre de Oroya", "bartonella baciliformis"]
+		["Entidad clínica  caracterizada por fiebre sin foco, sed orina no inflamatorio, GB >15000 y PCR >90", ["bacteremia oculta"]],
+		["Agente etiológico de la tos convulsiva", ["bordetella pertussis"]],
+		["Zoonosis adquirida por contacto con perros con infección del tracto genital. En el humano puede producir infección osteoarticular.", ["brucella canis", "brucella", "brucelosis"]],
+		["Agente etiológico de la enfermedad de arañazo de gato", ["bartonella henselae"]],
+		["Agente etiológico de la Fiebre de Oroya", ["bartonella baciliformis"]]
 	],
 	"C": [
 		["Agente infeccioso cuya infección in útero puede producir sordera en el niño.", "citomegalovirus"],
@@ -217,7 +217,7 @@ function checkAnswer(pos) {
 	/*
 		Nota de Guillermo:
 		Creamos una variable answerTest que asume que la respuesta es correcta.
-		Iteramos todos los elementos del arreglo revisando si son iguales a userAnswer. 
+		Iteramos todos los elementos del arreglo revisando si son iguales a userAnswer.
 		Cuando son iguales salimos del loop y cambiamos answerTest a True.
 		Luego evaluamos el antiguo else que se ejecutaba cuando la respuesta era incorrecta: if(!answerTest)...
 	*/
@@ -226,7 +226,7 @@ function checkAnswer(pos) {
 	for(let i = 0; i < words[pos].word.length; i++){
 		if (userAnswer == words[pos].word[i].toLowerCase()) {
 			words[pos].correct = true;
-			$(".circle .item").eq(words[pos].idNumber).addClass("item--success");	
+			$(".circle .item").eq(words[pos].idNumber).addClass("item--success");
 			answerTest = true;
 			break;
 		}
