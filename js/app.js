@@ -112,7 +112,7 @@ const questions = {
 		["Bacteria causante de Enfermedad de Lyme.", ["rickettsia rickettsii"]]
 	],
 	"S": [
-		["Especie bacteriana portadora del gen AMPc.", ["serratia marcescens"]],
+		["Especie bacteriana portadora del gen AMPc.", ["serratia marcescens", "serratia"]],
 		["Género bacteriano bacilo gram negativo que causa infección posterior a ingerir huevos mal cocidos.", ["salmonella"]],
 		["Enfermedad causada por parásito Sarcopteis scabei", ["sarna"]],
 		["Enfermedad inmunoprevenible de notificación inmediata.", ["sarampion"]]
