@@ -3,7 +3,7 @@ const questions = {
 		["Nombre científico de helminto cuyas larvas alcanzan el tejido pulmonar pudiendo causar tos, crisis obstructivas y hemoptisis.", ["ascaris lumbricoides", "ascaris"]],
 		["Antiparasitario de elección para el tratamiento de la toxocariasis", ["albendazol", "albendazol"]],
 		["Aminoglicósido de uso parenteral para el tratamiento de ITU febril o intolerancia gástrica para el tratamiento vía oral", ["amikacina", "amikacina"]],
-		["Vector de la Malaria (género)", "anopheles"],
+		["Vector de la Malaria (género)", ["anopheles"]],
 		["Vector de zika", ["aedes aegypti", "aedes"]]
 
 		/*
@@ -22,7 +22,7 @@ const questions = {
 	],
 	"C": [
 		["Agente infeccioso cuya infección in útero puede producir sordera en el niño.",[ "citomegalovirus"]],
-		["Hongo que produce meningitis en pacientes infectados con VIH con inmunodepresión severa.", ["crytococcus neoformans", "crytococcus"]],
+		["Hongo que produce meningitis en pacientes infectados con VIH con inmunodepresión severa.", ["crytococcus neoformans", "cryptococcus"]],
 		["Antibiótico de elección para el tratamiento intravenoso ambulatorio de la bacteremia oculta.", ["ceftriaxona"]],
 		["Agente causal de conjuntivitis y neumonía neonatal", ["chlamydia trachomatis"]],
 		["Enfermedad cuyo vector es el triatoma infestans", ["chagas"]]
@@ -46,7 +46,7 @@ const questions = {
 		["Nombre común de la influenza en inglés", ["flu"]]
 	],
 	"G": [
-		["Vector de Borrelia burgdorferi  y Erlichia canis.", ["garrapatas"]],
+		["Vector de Borrelia burgdorferi  y Erlichia canis.", ["garrapata", "garrapatas"]],
 		["Animal que transmite la bacteria Bartonella henselae a través de mordedura o lamido", ["gato"]],
 		["Biomarcador utilizado para el diagnóstico de Aspergilosis.", ["galactomanano"]],
 		["Especia de Candida", ["glabrata"]]
