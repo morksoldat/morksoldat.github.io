@@ -189,7 +189,7 @@ const words = questions_array.map(function (v, index) {
 
 function createWord(num, letter, question, answer) {
 	var hint;
-	if (answer[0].toLowerCase() === letter.toLowerCase()) {
+	if (answer[0][0].toLowerCase() === letter.toLowerCase()) {
 		hint = `Empieza por ${letter}:`;
 	} else {
 		hint = `Contiene ${letter}:`;
