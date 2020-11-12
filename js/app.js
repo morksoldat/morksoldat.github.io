@@ -31,7 +31,7 @@ const questions = {
 		["Agente causal de conjuntivitis y neumonía neonatal", ["chlamydia trachomatis"]],
 		["Enfermedad cuyo vector es el triatoma infestans", ["chagas"]],
 		["Enfermedad cuasada por el coronavirus tipo 2 del síndrome respiratorio agudo grave", ["covid-19", "covid 19", "covid19"]],
-		["Bacilo gram positivo anaerobio productor de diarrea nosocomial", ["Clostridium difficile", "C. difficile"],
+		["Bacilo gram positivo anaerobio productor de diarrea nosocomial", ["Clostridium difficile", "C. difficile"]],
 		["Subgrupo de antibiótico al que pertenece ertapenem", ["Carbapenemicos"]],
 		["Enzimas que hidrolizan con alta afinidad a casi todas los betalactámicos", ["carbapenemasas"]]
 	],
