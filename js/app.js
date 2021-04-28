@@ -26,7 +26,7 @@ const questions = {
 	"C": [
 		["Agente infeccioso cuya infección in útero puede producir sordera en el niño.",[ "citomegalovirus"]],
 		["Hongo que produce meningitis en pacientes infectados con VIH con inmunodepresión severa.", ["crytococcus neoformans", "cryptococcus"]],
-		["Antibiótico de elección para el tratamiento intravenoso ambulatorio de la bacteremia oculta.", ["ceftriaxona"]],
+		["Antibiótico de elección para el tratamiento Neisseria sp.", ["ceftriaxona"]],
 		["Agente causal de conjuntivitis y neumonía neonatal", ["chlamydia trachomatis"]],
 		["Enfermedad cuyo vector es el triatoma infestans", ["chagas"]],
 		["Enfermedad cuasada por el coronavirus tipo 2 del síndrome respiratorio agudo grave", ["covid-19", "covid 19", "covid19"]],
