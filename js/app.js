@@ -167,7 +167,7 @@ const questions = {
 	"U": [
 		["País con alto índice de SAMR en Latinoamérica.", ["uruguay"]],
 		["Manifestación clínica de la infección gonocócica.", ["uretritis"]],
-		["Clase de penicilina a la que pertenecen piperacilina", ["uretritis"]],
+		["Clase de penicilina a la que pertenecen piperacilina", ["ureidopenicilinas"]],
 		["Infección de lámina intermedia del ojo, situada entre la esclerótica y la retina", ["uveitis"]]
 	],
 	"V": [
