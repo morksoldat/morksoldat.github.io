@@ -83,7 +83,7 @@ const questions = {
 	],
 	"J": [
 		["Nombre de hongo patógeno oportunista que coloniza el aparato respiratorio, antiguamente considerado parásito.", ["pneumocystis jirovecii", "pneumocystis"]],
-		["RAM severa que compromete piel, mucosas, fanéreos, intestino, pulmón de evolución grave e incluso fatal.", ["stevens johnson"]]
+		["RAM severa que compromete piel, mucosas, fanéreos, intestino, pulmón de evolución grave e incluso fatal.", ["stevens johnson"]],
 		["Producto de elección para lavado de manos en contacto con paciente portador de Clostridium difficile.", ["jabón"]]
 	],
 	"K": [
